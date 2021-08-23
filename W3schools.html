@@ -1,0 +1,188 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">  
+    <style>
+        * {
+            font-size: 1.1rem;
+        }
+
+        a {
+            color: black;
+        }
+        a:hover{
+            color: black;
+        }
+
+        .navbar-brand {
+            text-decoration: underline;
+        }
+
+        .logo {
+
+            height: 80px;
+            width: 350px;
+        }
+
+        img {
+            height: 50%;
+            width: 50%;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+    <title>w3schools.com</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a href="https://www.w3schools.com/"><img src="./logo.png" class="logo" alt="w3schools.com"></a>
+        <h3 class="m-3">THE WORLD'S LARGEST WEBDEVELOPER SITE</h3>
+    </nav>
+
+    <hr style="height :2px; color:black ;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light m-3">
+        <div class="">
+            <a class="navbar-brand" href="https://www.w3schools.com/html/default.asp">HTML</a>
+        </div>
+        <div class="">
+            <a class="navbar-brand" href="https://www.w3schools.com/css/default.asp">CSS</a>
+        </div>
+        <div class="">
+            <a class="navbar-brand" href="https://www.w3schools.com/js/default.asp">JAVA SCRIPT</a>
+        </div>
+        <div class="">
+            <a class="navbar-brand" href="https://www.w3schools.com/python/default.asp">PYTHON</a>
+        </div>
+
+    </nav>
+    <hr style="height: 2px; color: black;">
+    <div class="p-3">
+        <h2>HTML Introduction</h2>
+        <p class="lead">HTML is a standard markup language for creating web pages.</p>
+        <ol>
+            <a href="#ch1">
+                <li>What is HTML</li>
+            </a>
+            <a href="#ch2">
+                <li>What is HTML elements</li>
+            </a>
+            <a href="#ch3">
+                <li>Web Browsers</li>
+            </a>
+        </ol>
+    </div>
+    <div class="p-3">
+        <h3 id="ch1">What is HTML</h3>
+        <ul>
+            <li class="m-2">HTML stands for hypertext markup language</li>
+            <li class="m-2">HTML is standard markup language for creating webpages</li>
+            <li class="m-2">HTML describes the structure of the webpages</li>
+            <li class="m-2">HTML consistes of a series of elements</li>
+            <li class="m-2">HTML tell the browser how to display the content</li>
+            <li class="m-2">HTML elements label pieces of content such as "This is a heading" , "This is a paragraph" ,
+                "This is a link" etc.</li>
+
+        </ul>
+    </div>
+    <div class="p-3">
+        <h3 id="ch2">What is HTML Elements</h3>
+        <p>An HTML Element is defined by a start tag , some conytent , and an end tag:</p>
+        <div class="container m-0">
+            <p><em style="color:rgb(116, 24, 24);">&lt;tagname&gt;</em>Content goes here...<em
+                    style="color: rgb(116, 24, 24);">&lt;/tagname&gt;</em></p>
+        </div>
+        <small>The HTML is everything from the start tag to the end tag:</small>
+
+        <div class="container m-2 mt-3">
+            <p><em style="color:rgb(116, 24, 24);">&lt;h1&gt;</em>My First Heading<em
+                    style="color: rgb(116, 24, 24);">&lt;/h1&gt;</em></p>
+        </div>
+        <div class="container m-2">
+            <p><em style="color:rgb(116, 24, 24);">&lt;p&gt;</em>My First Paragraph<em
+                    style="color: rgb(116, 24, 24);">&lt;/p&gt;</em></p>
+        </div>
+
+        <table>
+            <tr>
+                <th>Start Tag</th>
+                <th>Element Content</th>
+                <th>End Tag</th>
+            </tr>
+            <tr>
+                <td>&lt;h1&gt;</td>
+                <td>My First Heading</td>
+                <td>&lt;/h1&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>My First Paragraph</td>
+                <td>&lt;/p&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;br&gt;</td>
+                <td>None</td>
+                <td>none</td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="p-3">
+        <h3 id="ch3">Web Browsers</h3>
+        <p>The purpose of web browser(Chrome, Edge, Firfox, Safari) is to read HTML documents and display them
+            correctly.</p>
+        <p>A browser does not display the HTML tag, but uses them to determine how to display the cocuments.</p>
+        <div class="container" > <img src="./ss1.png" alt="screenshot"></div>
+    </div>
+    <div class="p-3">
+        <h3>Submit a Review</h3>
+        <form action="./submit.html" method="POST">
+            <label for="name">Name:</label>
+            <input class="m-2" type="text" id="name" name="name">
+            <input class="m-2" type="radio" id="male" name="gender" value="HTML" required>
+            <label for="male">Male</label>
+            <input class="m-2" type="radio" id="female" name="gender" value="CSS" required>
+            <label for="female">Female</label>
+            <input class="m-2" type="radio" id="others" name="gender" value="JavaScript" required>
+            <label for="others">Others</label><br>
+            <label for="cars">Rate it:</label>
+            <select id="rate" name="Rate" required class="m-2">
+                <option value="bad">Bad</option>
+                <option value="ok">Ok</option>
+                <option value="good">Good</option>
+                <option value="verygood" selected>Very good</option>
+            </select><br>
+            <textarea name="review" id="review" cols="30" rows="4" placeholder="Please add a review"></textarea><br>
+            <input class="m-2" type="submit">
+
+        </form>
+    </div>
+</body>
+
+</html>
